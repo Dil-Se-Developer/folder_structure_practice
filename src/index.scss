@@ -1,0 +1,40 @@
+//  Root Varibles
+
+:root {
+    --bg-clr: #000;
+    --white-font: #fff;
+    --black-font: #000;
+    --gold-font: #EED490;
+}
+
+// Reset CSSS
+
+html {
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg-clr);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+// Common Class
+
+.page_container {
+    margin: 0 auto;
+    width: auto;
+}
+
+// Common Class Responsive Style
+@media only screen and (min-width: 1200px) {
+    .page_container {
+        width: 1200px;
+    }
+}

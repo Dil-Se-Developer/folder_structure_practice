@@ -1,10 +1,97 @@
-// &-text h1{
-//     animation-name: slideRight(NameForAnimation);
-//     animation-duration: 1.5s;
-//     position: relative;
-    
-// }
-// @keyframes slideRight(NameForAnimation) {
-//     0%   {left:-200px; top:0px;}
-//     100%  {left:0px; top:0px;}
-// }
+.page_container {
+    &.mobileimg_section {
+        margin-top: 15rem;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+
+        .mobileimg_card {
+            color: var(--white-font);
+            text-align: center;
+
+            img {
+                width: 223px;
+                height: 456px;
+                // object-fit: cover;
+            }
+
+            &:nth-child(2) {
+                img {
+                    width: 199px;
+                    height: 405px;
+                }
+            }
+
+            h3 {
+                cursor: pointer;
+                font-size: 3.6rem;
+                font-weight: 400;
+                margin: 2rem 0 1rem 0;
+            }
+
+            p {
+                font-size: 2.4rem;
+                font-weight: 400;
+                margin-bottom: 10rem;
+            }
+        }
+    }
+
+    // Responsive Style 
+    @media only screen and (min-width: 768px) {
+        &.mobileimg_section {
+            flex-direction: row;
+            column-gap: 2rem;
+            align-items: flex-end;
+
+            .mobileimg_card {
+                flex: 30%;
+
+                img {
+                    width: 149px;
+                }
+
+                &:nth-child(2) {
+                    img {
+                        width: 126px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        &.mobileimg_section {
+            .mobileimg_card {
+                img {
+                    width: 215px;
+                }
+
+                &:nth-child(2) {
+                    img {
+                        width: 193px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        &.mobileimg_section {
+            padding: 0;
+
+            .mobileimg_card {
+                img {
+                    width: 236px;
+                }
+
+                &:nth-child(2) {
+                    img {
+                        width: 199px;
+                    }
+                }
+            }
+        }
+    }
+
+}

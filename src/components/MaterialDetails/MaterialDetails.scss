@@ -1,0 +1,95 @@
+.MaterialDetails_Section {
+    background-image: url('../../assets/bg_img_3.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    // background-size: cover;
+    // background-attachment: scroll;
+    .MateriralDetails_txt {
+        padding: 6rem 4rem 0rem;
+
+        h2 {
+            font-size: 4.8rem;
+            font-weight: 400;
+            color: var(--gold-font);
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--white-font);
+            line-height: 2.2rem;
+            margin-bottom: 4rem;
+        }
+
+        .MeterialDetails_txt_block {
+            display: flex;
+            flex-direction: column;
+
+            .MeterialDetails_txt_card {
+                h5 {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: var(--gold-font);
+                }
+
+                p {
+                    margin: 2rem 0 2.5rem;
+                }
+
+                &:nth-child(3) {
+                    p {
+                        margin-bottom: 8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Responsive Style 
+    @media only screen and (min-width: 768px) {
+        background-position: 60% 5%;
+
+        .MateriralDetails_txt {
+            width: 55%;
+
+            .MeterialDetails_txt_block {
+                flex-direction: row;
+                column-gap: 2rem;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        background-size: cover;
+
+        .MateriralDetails_txt {
+            width: 60%;
+
+            .MeterialDetails_txt_block {
+                .MeterialDetails_txt_card {
+                   p {
+                        margin-bottom: 10rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .MateriralDetails_txt {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 16rem 0rem 0rem;
+            padding-right: 55rem;
+            .MeterialDetails_txt_block {
+                .MeterialDetails_txt_card {
+                   p {
+                        margin-bottom: 20rem;
+                    }
+                }
+            }
+        }
+    }
+}

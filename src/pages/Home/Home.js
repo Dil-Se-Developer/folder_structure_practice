@@ -4,6 +4,9 @@ import Banner from "../../components/Banner/Banner";
 import MobileDifference from "../../components/MobileDifference/MobileDifference";
 import MobileSpecification from "../../components/MobileSpecification/MobileSpecification";
 import MobileImgSection from "../../components/MobileImgSection/MobileImgSection";
+import MaterialDetails from "../../components/MaterialDetails/MaterialDetails";
+import MobileGallery from "../../components/MobileGallery/MobileGallery";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +16,9 @@ const Home = () => {
       <MobileDifference />
       <MobileSpecification />
       <MobileImgSection />
+      <MaterialDetails/>
+      <MobileGallery/>
+      <Footer/>
     </>
   );
 };

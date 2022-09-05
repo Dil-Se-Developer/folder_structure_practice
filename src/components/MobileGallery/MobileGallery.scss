@@ -1,0 +1,30 @@
+.page_container {
+    &.MobileGallery_Section {
+        margin-top: 15rem;
+        margin-bottom: 10rem;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        img {
+            height: 346px;
+            object-fit: cover;
+        }
+    }
+
+    // Responsive Style 
+    @media only screen and (min-width: 768px) {
+        &.MobileGallery_Section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            img {
+                width: 33%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        &.MobileGallery_Section{
+            padding: 0;
+        }
+    }
+}
